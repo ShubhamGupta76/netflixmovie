@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800 text-gray-400 py-12 mt-20">
       <div className="container mx-auto px-4 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-2xl font-black mb-4 text-red-600">NETFLIX</h3>
+            <Link to="/" className="text-white text-2xl font-black mb-4 text-red-600 block">
+              NETFLIX
+            </Link>
             <p className="text-sm text-gray-500">
               Unlimited movies, TV shows, and more. Watch anywhere. Cancel anytime.
             </p>
@@ -13,24 +17,24 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/" className="hover:text-white transition-colors duration-200">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#tv-show" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/tv-shows" className="hover:text-white transition-colors duration-200">
                   TV Shows
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#movie" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/movies" className="hover:text-white transition-colors duration-200">
                   Movies
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#novel" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/my-list" className="hover:text-white transition-colors duration-200">
                   My List
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -38,24 +42,24 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Categories</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/" className="hover:text-white transition-colors duration-200">
                   Trending
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/new-popular" className="hover:text-white transition-colors duration-200">
                   Popular
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200 cursor-pointer">
+                <Link to="/movies" className="hover:text-white transition-colors duration-200">
                   Action
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors duration-200 cursor-pointer">
-                  Horror
-                </a>
+                <Link to="/tv-shows" className="hover:text-white transition-colors duration-200">
+                  Drama
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,13 +69,13 @@ const Footer = () => {
             <div className="flex flex-col space-y-2 mt-4">
               <a 
                 href="#" 
-                className="text-sm hover:text-white transition-colors duration-200 cursor-pointer"
+                className="text-sm hover:text-white transition-colors duration-200"
               >
                 Privacy Policy
               </a>
               <a 
                 href="#" 
-                className="text-sm hover:text-white transition-colors duration-200 cursor-pointer"
+                className="text-sm hover:text-white transition-colors duration-200"
               >
                 Terms of Service
               </a>
